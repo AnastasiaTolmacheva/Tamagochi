@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="?attr/backgroundDayNight"
+    android:padding="16dp">
+
+
+    <!-- Прогресс-бары состояний с подписями -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="2dp">
+
+        <!-- Прогресс-бар сытости с подписью -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сытость"
+                style="?attr/textAppearanceBody1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:id="@+id/satietyBar"
+                android:layout_marginStart="11dp"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/sprite_00" />
+        </LinearLayout>
+
+        <!-- Прогресс-бар чистоты с подписью -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Чистота"
+                style="?attr/textAppearanceBody1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:id="@+id/cleanlinessBar"
+                android:layout_marginStart="14dp"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:src="@drawable/sprite_11"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+
+
+        <!-- Прогресс-бар счастья с подписью -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Счастье"
+                style="?attr/textAppearanceBody1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:id="@+id/happinessBar"
+                android:layout_marginStart="14dp"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:src="@drawable/sprite_22"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+
+        <!-- Прогресс-бар энергии с подписью -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Энергия"
+                style="?attr/textAppearanceBody1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:id="@+id/energyBar"
+                android:layout_marginStart="14dp"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:src="@drawable/sprite_33"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Изображение персонажа -->
+    <ImageView
+        android:id="@+id/creatureImage"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_gravity="center"
+        android:src="@drawable/sprite_cat00"
+        android:scaleType="fitXY" />
+
+    <!-- Время жизни -->
+    <TextView
+        android:id="@+id/lifeTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Время жизни: 0 сек"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        style="?attr/textAppearanceBody1"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Кнопки взаимодействия с Тамагочи (внизу экрана, две колонки) -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:layout_gravity="center">
+
+        <!-- Кнопка "Накормить" -->
+        <Button
+            android:id="@+id/feedButton"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Накормить"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="12dp" />
+
+        <!-- Кнопка "Играть" -->
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Играть"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="12dp" />
+
+
+        <!-- Кнопка "Помыть" -->
+        <Button
+            android:id="@+id/cleanButton"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Помыть"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="12dp" />
+
+        <!-- Кнопка "Спать" -->
+        <Button
+            android:id="@+id/sleepButton"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Спать"
+            android:backgroundTint="@color/violet"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="12dp" />
+    </GridLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/death"
+    android:padding="16dp">
+
+    <!-- Изображение персонажа -->
+    <ImageView
+        android:id="@+id/creatureImage"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_gravity="center"
+        android:src="@drawable/sprite_cat26"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@id/lifeTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Время жизни: 0 сек"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/bestScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Лучший результат: 0 сек"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Начать заново"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"/>
+</LinearLayout>

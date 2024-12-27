@@ -1,0 +1,53 @@
+<resources>
+    <integer-array name="satiety_images">
+        <item>@drawable/sprite_09</item>
+        <item>@drawable/sprite_08</item>
+        <item>@drawable/sprite_07</item>
+        <item>@drawable/sprite_06</item>
+        <item>@drawable/sprite_05</item>
+        <item>@drawable/sprite_04</item>
+        <item>@drawable/sprite_03</item>
+        <item>@drawable/sprite_02</item>
+        <item>@drawable/sprite_01</item>
+        <item>@drawable/sprite_00</item>
+    </integer-array>
+
+    <integer-array name="energy_images">
+        <item>@drawable/sprite_42</item>
+        <item>@drawable/sprite_41</item>
+        <item>@drawable/sprite_40</item>
+        <item>@drawable/sprite_39</item>
+        <item>@drawable/sprite_38</item>
+        <item>@drawable/sprite_37</item>
+        <item>@drawable/sprite_36</item>
+        <item>@drawable/sprite_35</item>
+        <item>@drawable/sprite_34</item>
+        <item>@drawable/sprite_33</item>
+    </integer-array>
+
+    <integer-array name="cleanliness_images">
+        <item>@drawable/sprite_20</item>
+        <item>@drawable/sprite_19</item>
+        <item>@drawable/sprite_18</item>
+        <item>@drawable/sprite_17</item>
+        <item>@drawable/sprite_16</item>
+        <item>@drawable/sprite_15</item>
+        <item>@drawable/sprite_14</item>
+        <item>@drawable/sprite_13</item>
+        <item>@drawable/sprite_12</item>
+        <item>@drawable/sprite_11</item>
+    </integer-array>
+
+    <integer-array name="happiness_images">
+        <item>@drawable/sprite_31</item>
+        <item>@drawable/sprite_30</item>
+        <item>@drawable/sprite_29</item>
+        <item>@drawable/sprite_28</item>
+        <item>@drawable/sprite_27</item>
+        <item>@drawable/sprite_26</item>
+        <item>@drawable/sprite_25</item>
+        <item>@drawable/sprite_24</item>
+        <item>@drawable/sprite_23</item>
+        <item>@drawable/sprite_22</item>
+    </integer-array>
+</resources>
