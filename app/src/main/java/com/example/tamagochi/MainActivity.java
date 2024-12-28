@@ -132,7 +132,6 @@ public class MainActivity extends AppCompatActivity {
         // Переход в GameOverActivity
         Intent intent = new Intent(MainActivity.this, GameOverActivity.class);
         intent.putExtra("LIFE_TIME", elapsedTime);
-        intent.putExtra("BEST_SCORE", bestScore);
         startActivity(intent);
         finish();  // Закрываем текущую активность
     }
@@ -144,11 +143,5 @@ public class MainActivity extends AppCompatActivity {
         energyBar.release();
         cleanlinessBar.release();
         happinessBar.release();
-
-        SharedPreferences sharedPreferences = getSharedPreferences("GamePrefs", MODE_PRIVATE);
-        bestScore = sharedPreferences.getLong("BEST_SCORE", 0);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putLong("BEST_SCORE", bestScore);
-        editor.apply();
     }
 }
